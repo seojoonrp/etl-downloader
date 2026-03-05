@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "eTL Bulk Downloader",
+  "version": "1.0",
+  "permissions": ["downloads"],
+  "host_permissions": ["*://*.snu.ac.kr/*", "*://*.snuon.ac.kr/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.snu.ac.kr/*", "*://*.snuon.ac.kr/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
