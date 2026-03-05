@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "eTL Downloader",
+  "name": "eTL Download Helper",
+  "description": "A Chrome extension to simplify the process of downloading multiple files from the eTL webpage of SNU.",
   "version": "1.0",
   "permissions": ["downloads"],
-  "host_permissions": ["*://*.snu.ac.kr/*", "*://*.snuon.ac.kr/*"],
+  "host_permissions": ["*://*.myetl.snu.ac.kr/*"],
   "content_scripts": [
     {
-      "matches": ["*://*.snu.ac.kr/*", "*://*.snuon.ac.kr/*"],
+      "matches": ["*://*.myetl.snu.ac.kr/*"],
       "js": ["content.js"]
     }
   ],
